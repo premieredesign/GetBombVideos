@@ -13,10 +13,8 @@ class APIService {
     
     func fetchSearchResults<T: Decodable>(search: String, completion: @escaping (T) -> ()) {
         let APIKEY = "853e50372499e9615ebbb7029761b648292346b9"
-        guard let url = URL(string: "https://www.giantbomb.com/api/search/?api_key=\(APIKEY)&format=json&query=\(search.lowercased())&resources=game") else {return}
-        
-        print("url*********", url)
-        
+        guard let url = URL(string: "https://www.giantbomb.com/api/search/?api_key=\(APIKEY)&format=json&query=\(search.lowercased())&resources=game&limit=5") else {return}
+                
         URLSession.shared.dataTask(with: url) { (data, res, err) in
             if let err = err {
                 print("****Failed to retrieve data", err.localizedDescription)
@@ -27,7 +25,6 @@ class APIService {
             
             do {
                 let responseDataObj = try JSONDecoder().decode(T.self, from: data)
-                print("*********",responseDataObj)
                 DispatchQueue.main.async {
                     completion(responseDataObj)
                 }

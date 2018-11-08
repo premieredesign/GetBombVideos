@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA13F75821941CE600F900EA /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13F75721941CE600F900EA /* TableViewCell.swift */; };
+		CA13F75A2194294000F900EA /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA13F7592194294000F900EA /* BaseCell.swift */; };
 		CA18BED12193C2F00016743A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18BED02193C2F00016743A /* AppDelegate.swift */; };
 		CA18BED32193C2F00016743A /* MainCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18BED22193C2F00016743A /* MainCollectionController.swift */; };
 		CA18BED62193C2F00016743A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA18BED42193C2F00016743A /* Main.storyboard */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA13F75721941CE600F900EA /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CA13F7592194294000F900EA /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 		CA18BECD2193C2F00016743A /* GetBombVideos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetBombVideos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA18BED02193C2F00016743A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA18BED22193C2F00016743A /* MainCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA13F756219419A900F900EA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CA13F75721941CE600F900EA /* TableViewCell.swift */,
+				CA13F7592194294000F900EA /* BaseCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		CA18BEC42193C2EF0016743A = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +81,7 @@
 		CA18BECF2193C2F00016743A /* GetBombVideos */ = {
 			isa = PBXGroup;
 			children = (
+				CA13F756219419A900F900EA /* Cells */,
 				CA18BEE52193C7660016743A /* Utility */,
 				CA18BEE42193C75B0016743A /* Helpers */,
 				CA18BEE32193C74E0016743A /* Model */,
@@ -193,7 +207,9 @@
 				CA18BEE92193D3220016743A /* APIService.swift in Sources */,
 				CA18BEEF2193E2F80016743A /* Colors.swift in Sources */,
 				CA18BEF32193F8B20016743A /* VideoModel.swift in Sources */,
+				CA13F75821941CE600F900EA /* TableViewCell.swift in Sources */,
 				CA18BEE72193CA5C0016743A /* UIViewHelper.swift in Sources */,
+				CA13F75A2194294000F900EA /* BaseCell.swift in Sources */,
 				CA18BEF12193F8A70016743A /* GameModel.swift in Sources */,
 				CA18BEED2193DCAE0016743A /* SearchModel.swift in Sources */,
 				CA18BEEB2193D7E50016743A /* CustomImageView.swift in Sources */,
