@@ -21,6 +21,7 @@ class TableViewCell: BaseCell {
         }
     }
     
+   
     let nameLabel: UILabel = {
        let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -46,6 +47,8 @@ class TableViewCell: BaseCell {
         
         return os
     }()
+    
+
     
     func setup() {
         addSubview(customImageView)

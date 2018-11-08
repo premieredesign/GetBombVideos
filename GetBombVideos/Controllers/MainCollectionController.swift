@@ -59,6 +59,7 @@ class MainCollectionController: UITableViewController, UISearchControllerDelegat
         timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
             APIService.shared.fetchSearchResults(search: searchText, completion: { (SearchResults: SearchModel) in
                 self.searchResults = SearchResults.results
+                self.searchController.isActive = false
                 self.tableView.reloadData()
             })
         })
@@ -95,11 +96,17 @@ class MainCollectionController: UITableViewController, UISearchControllerDelegat
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.modalTransitionStyle = .coverVertical
-        print(indexPath.row)
+        let videoController = VideoController()
+ 
+        navigationController?.modalTransitionStyle = .crossDissolve
+        navigationController?.modalPresentationStyle = .overCurrentContext
+        navigationController?.present(videoController, animated: true, completion: {
+            videoController.playVideo(video: self.searchResults[indexPath.row])
+        })
     }
     
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = .white
