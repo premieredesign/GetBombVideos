@@ -8,10 +8,10 @@
 
 import Foundation
 
-class VideoModel:Decodable {
+struct VideoModel:Decodable {
     let results: VideoSearchResults
 }
 
-class VideoSearchResults:Decodable {
+struct VideoSearchResults:Decodable {
     let embed_player: String
 }

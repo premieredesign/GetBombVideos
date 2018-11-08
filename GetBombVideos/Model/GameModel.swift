@@ -8,18 +8,18 @@
 
 import Foundation
 
-class GameModel:Decodable {
+struct GameModel:Decodable {
     let results: GameSearchResults
 }
 
-class GameSearchResults:Decodable {
+struct GameSearchResults:Decodable {
     let api_detail_url: String
     let image: ImageOptions
     let name: String
     let videos: [Videos]
 }
 
-class Videos:Decodable {
+struct Videos:Decodable {
     let api_detail_url: String
     let name: String
     let id: Double

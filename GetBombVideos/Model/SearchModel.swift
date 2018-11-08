@@ -8,16 +8,16 @@
 
 import Foundation
 
-class SearchModel:Decodable {
+struct SearchModel:Decodable {
     let results: [SearchResults]
 }
 
-class SearchResults:Decodable {
+struct SearchResults:Decodable {
     let api_detail_url: String
     let image: ImageOptions
     let name: String
 }
 
-class ImageOptions:Decodable {
+struct ImageOptions:Decodable {
     let medium_url: String
 }

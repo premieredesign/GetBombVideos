@@ -18,7 +18,7 @@ class MainCollectionController: UIViewController, UISearchBarDelegate {
         
         // Setup Search Bar
         setupSearchBar()
-        searchWhatUserTypes(searchController.searchBar, textDidChange: "")
+        searchWhatUserTypes(searchController.searchBar, textDidChange: "Call")
     }
     
     //MARK: - Properties
@@ -35,6 +35,7 @@ class MainCollectionController: UIViewController, UISearchBarDelegate {
     
     //MARK: -- Search Bar
     func setupSearchBar() {
+        self.definesPresentationContext = true
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = true
         
@@ -45,8 +46,10 @@ class MainCollectionController: UIViewController, UISearchBarDelegate {
     func searchWhatUserTypes(_ searchBar: UISearchBar, textDidChange searchText: String) {
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
-            APIService.shared.fetchSearchResults(search: searchText, completion: { (Games: APIModel) in
-                print(Games.description)
+            APIService.shared.fetchSearchResults(search: searchText, completion: { (SearchResults: SearchModel) in
+                SearchResults.results.map({
+                    print("These are the names", $0.name)
+                })
             })
         })
     }
