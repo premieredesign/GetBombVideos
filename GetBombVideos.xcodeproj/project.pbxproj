@@ -14,6 +14,9 @@
 		CA18BEDB2193C2F00016743A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA18BED92193C2F00016743A /* LaunchScreen.storyboard */; };
 		CA18BEE72193CA5C0016743A /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18BEE62193CA5C0016743A /* UIViewHelper.swift */; };
 		CA18BEE92193D3220016743A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18BEE82193D3220016743A /* APIService.swift */; };
+		CA18BEEB2193D7E50016743A /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18BEEA2193D7E50016743A /* CustomImageView.swift */; };
+		CA18BEED2193DCAE0016743A /* APIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18BEEC2193DCAE0016743A /* APIModel.swift */; };
+		CA18BEEF2193E2F80016743A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18BEEE2193E2F80016743A /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		CA18BEDC2193C2F00016743A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA18BEE62193CA5C0016743A /* UIViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
 		CA18BEE82193D3220016743A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		CA18BEEA2193D7E50016743A /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		CA18BEEC2193DCAE0016743A /* APIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModel.swift; sourceTree = "<group>"; };
+		CA18BEEE2193E2F80016743A /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		CA18BEE32193C74E0016743A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CA18BEEC2193DCAE0016743A /* APIModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				CA18BEE62193CA5C0016743A /* UIViewHelper.swift */,
+				CA18BEEA2193D7E50016743A /* CustomImageView.swift */,
+				CA18BEEE2193E2F80016743A /* Colors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -176,7 +185,10 @@
 				CA18BED32193C2F00016743A /* MainCollectionController.swift in Sources */,
 				CA18BED12193C2F00016743A /* AppDelegate.swift in Sources */,
 				CA18BEE92193D3220016743A /* APIService.swift in Sources */,
+				CA18BEEF2193E2F80016743A /* Colors.swift in Sources */,
 				CA18BEE72193CA5C0016743A /* UIViewHelper.swift in Sources */,
+				CA18BEED2193DCAE0016743A /* APIModel.swift in Sources */,
+				CA18BEEB2193D7E50016743A /* CustomImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
