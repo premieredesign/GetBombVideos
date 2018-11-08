@@ -54,6 +54,10 @@
 		CA18BECF2193C2F00016743A /* GetBombVideos */ = {
 			isa = PBXGroup;
 			children = (
+				CA18BEE52193C7660016743A /* Utility */,
+				CA18BEE42193C75B0016743A /* Helpers */,
+				CA18BEE32193C74E0016743A /* Model */,
+				CA18BEE22193C7440016743A /* Controllers */,
 				CA18BED02193C2F00016743A /* AppDelegate.swift */,
 				CA18BED22193C2F00016743A /* ViewController.swift */,
 				CA18BED42193C2F00016743A /* Main.storyboard */,
@@ -62,6 +66,34 @@
 				CA18BEDC2193C2F00016743A /* Info.plist */,
 			);
 			path = GetBombVideos;
+			sourceTree = "<group>";
+		};
+		CA18BEE22193C7440016743A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CA18BEE32193C74E0016743A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA18BEE42193C75B0016743A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CA18BEE52193C7660016743A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
