@@ -12,6 +12,8 @@
 		CA18BED62193C2F00016743A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA18BED42193C2F00016743A /* Main.storyboard */; };
 		CA18BED82193C2F00016743A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA18BED72193C2F00016743A /* Assets.xcassets */; };
 		CA18BEDB2193C2F00016743A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA18BED92193C2F00016743A /* LaunchScreen.storyboard */; };
+		CA18BEE72193CA5C0016743A /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18BEE62193CA5C0016743A /* UIViewHelper.swift */; };
+		CA18BEE92193D3220016743A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18BEE82193D3220016743A /* APIService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		CA18BED72193C2F00016743A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA18BEDA2193C2F00016743A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA18BEDC2193C2F00016743A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA18BEE62193CA5C0016743A /* UIViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
+		CA18BEE82193D3220016743A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 		CA18BEE42193C75B0016743A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CA18BEE62193CA5C0016743A /* UIViewHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -92,6 +97,7 @@
 		CA18BEE52193C7660016743A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				CA18BEE82193D3220016743A /* APIService.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -169,6 +175,8 @@
 			files = (
 				CA18BED32193C2F00016743A /* MainCollectionController.swift in Sources */,
 				CA18BED12193C2F00016743A /* AppDelegate.swift in Sources */,
+				CA18BEE92193D3220016743A /* APIService.swift in Sources */,
+				CA18BEE72193CA5C0016743A /* UIViewHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
