@@ -13,5 +13,7 @@ struct VideoModel:Decodable {
 }
 
 struct VideoSearchResults:Decodable {
+    let image: ImageOptions
     let embed_player: String
+    let youtube_id: String
 }

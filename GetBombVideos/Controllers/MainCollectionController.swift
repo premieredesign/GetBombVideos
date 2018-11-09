@@ -15,19 +15,7 @@ class MainCollectionController: UITableViewController, UISearchControllerDelegat
     var timer: Timer?
     var searchResults = [SearchResults]()
     let searchController = UISearchController(searchResultsController: nil)
-    
-    let collectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        let cc = UICollectionView(frame: .zero, collectionViewLayout: layout)
-//        cc.delegate = self
-//        cc.dataSource = self
-        cc.translatesAutoresizingMaskIntoConstraints = false
-        
-        return cc
-    }()
-    
 
-    
     
     //MARK: - Methods()
     
@@ -103,6 +91,8 @@ class MainCollectionController: UITableViewController, UISearchControllerDelegat
         navigationController?.present(videoController, animated: true, completion: {
             videoController.playVideo(video: self.searchResults[indexPath.row])
         })
+        
+        navigationController?.isNavigationBarHidden = false
     }
     
     

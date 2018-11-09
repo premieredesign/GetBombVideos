@@ -13,7 +13,6 @@ struct GameModel:Decodable {
 }
 
 struct GameSearchResults:Decodable {
-    let api_detail_url: String
     let image: ImageOptions
     let name: String
     let videos: [Videos]
@@ -21,6 +20,7 @@ struct GameSearchResults:Decodable {
 
 struct Videos:Decodable {
     let api_detail_url: String
+    let site_detail_url: String
     let name: String
-    let id: Double
+    let id: Int
 }

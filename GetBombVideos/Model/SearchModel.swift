@@ -14,6 +14,7 @@ struct SearchModel:Decodable {
 
 struct SearchResults:Decodable {
     let api_detail_url: String
+    let site_detail_url: String
     let image: ImageOptions
     let name: String
 }
